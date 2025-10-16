@@ -29,7 +29,7 @@
       <ul>
         <li>定位：面向开发者的 Geocode/Reverse Geocode API</li>
         <li>亮点：累进阶梯计费、用户专属定价、UTC 周期结算、余额/信用分账</li>
-        <li>结果：相比Google<b><i>&lt;20%&gt;%</i></b> 成本下降
+        <li>结果：相比Google<b><i>&lt;20&gt;%</i></b> 成本下降
       </ul>
       <a href="https://github.com/ciby9833/GistMap">
         <img src="https://img.shields.io/badge/Repo-GistMap-black?logo=github"/>
@@ -42,7 +42,7 @@
       <ul>
         <li>定位：收派/地址标准化、票据解析、地理要素抽取</li>
         <li>亮点：地址模糊匹配、层级映射、成本核算接口</li>
-        <li>结果：异常单处理时长从 <b><i>&lt;填数字&gt; 分</i></b> 降至 <b><i>&lt;填数字&gt; 分</i></b></li>
+        <li>结果：人工匹配处理时长从 <b><i>&lt;两&gt; 周</i></b> 降至 <b><i>&lt;十几&gt; 分</i></b></li>
       </ul>
       <a href="https://github.com/ciby9833/CargoTranslator">
         <img src="https://img.shields.io/badge/Repo-CargoTranslator-black?logo=github"/>
