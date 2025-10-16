@@ -29,7 +29,7 @@
       <ul>
         <li>定位：面向开发者的 Geocode/Reverse Geocode API</li>
         <li>亮点：累进阶梯计费、用户专属定价、UTC 周期结算、余额/信用分账</li>
-        <li>结果：<b><i>&lt;填数字&gt;%</i></b> 成本下降，<b><i>&lt;填数字&gt;x</i></b> 日活 API 调用</li>
+        <li>结果：相比Google<b><i>&lt;20%&gt;%</i></b> 成本下降
       </ul>
       <a href="https://github.com/ciby9833/GistMap">
         <img src="https://img.shields.io/badge/Repo-GistMap-black?logo=github"/>
