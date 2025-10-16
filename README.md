@@ -117,19 +117,24 @@
 ---
 
 ## 🧭 My Workflow
+
 ```mermaid
 flowchart LR
-A[用户调用API] --> B[Usage Log 写入]
-B --> C[计费引擎计算阶梯费用]
-C --> D[扣减余额/信用额度]
-D --> E[生成账单与日统计]
-E --> F[用户控制台展示]
+    A[用户调用API] --> B[Usage Log 写入]
+    B --> C[计费引擎计算阶梯费用]
+    C --> D[扣减余额/信用额度]
+    D --> E[生成账单与日统计]
+    E --> F[用户控制台展示]
+```
 
-🪪 Contact
-	•	GitHub: https://github.com/ciby9833
-	•	Email: noelgfr@gmail.com
-	•	LinkedIn: https://www.linkedin.com/in/川（xavier）-吴-583526223
-	•	Location: Jakarta 🇮🇩 · Shanghai 🇨🇳
+---
+
+## 🪪 Contact
+
+- [GitHub](https://github.com/ciby9833)
+- [Email](mailto:noelgfr@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/%E5%B7%9D%EF%BC%88xavier%EF%BC%89-%E5%90%B4-583526223)
+- Location: Jakarta 🇮🇩 · Shanghai 🇨🇳
 
 <p align="center">
   <img src="https://img.shields.io/github/followers/ciby9833?label=Follow%20Me&style=social" />
@@ -139,6 +144,5 @@ E --> F[用户控制台展示]
 <p align="center">
   <i>“Turning complexity into clarity — one product at a time.”</i>
 </p>
-```
 
 
