@@ -88,19 +88,19 @@
 
 ## 🧠 AI Projects Snapshot
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ciby9833/ciby9833/main/assets/gis/ai/ai_1.png" width="30%" />
-  <img src="https://raw.githubusercontent.com/ciby9833/ciby9833/main/assets/gis/ai/ai_2.png" width="30%" />
-  <img src="https://raw.githubusercontent.com/ciby9833/ciby9833/main/assets/gis/ai/ai_3.png" width="30%" />
+  <img src="https://github.com/ciby9833/ciby9833/blob/main/iloveimg-compressed%20(2)/ai1.png" width="30%" />
+  <img src="https://github.com/ciby9833/ciby9833/blob/main/iloveimg-compressed%20(2)/ai2.png" width="30%" />
+  <img src="https://github.com/ciby9833/ciby9833/blob/main/iloveimg-compressed%20(2)/ai3.png" width="30%" />
 </div>
 <p align="center"><sub>AI 模型可视化识别与自动化场景示意</sub></p>
 
 ## 🗺️ GIS Projects Snapshot
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ciby9833/ciby9833/main/assets/gis/gis_1.png" width="30%" />
-  <img src="https://raw.githubusercontent.com/ciby9833/ciby9833/main/assets/gis/gis_2.png" width="30%" />
-  <img src="https://raw.githubusercontent.com/ciby9833/ciby9833/main/assets/gis/gis_3.png" width="30%" />
-  <img src="https://raw.githubusercontent.com/ciby9833/ciby9833/main/assets/gis/gis_4.png" width="30%" />
-  <img src="https://raw.githubusercontent.com/ciby9833/ciby9833/main/assets/gis/gis_5.png" width="30%" />
+  <img src="https://github.com/ciby9833/ciby9833/blob/main/iloveimg-compressed/gis1.png" width="30%" />
+  <img src="https://github.com/ciby9833/ciby9833/blob/main/iloveimg-compressed/gis2.png" width="30%" />
+  <img src="https://github.com/ciby9833/ciby9833/blob/main/iloveimg-compressed/gis3.png" width="30%" />
+  <img src="https://github.com/ciby9833/ciby9833/blob/main/iloveimg-compressed/gis4.png" width="30%" />
+  <img src="https://github.com/ciby9833/ciby9833/blob/main/iloveimg-compressed/gis5.png" width="30%" />
 </div>
 <p align="center"><sub>GIS 空间分析与聚类等模型展示</sub></p>
 
