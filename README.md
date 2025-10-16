@@ -52,7 +52,7 @@
 **成果**：
 - 异常地址识别准确率提升 92% → 99%  
 - 平均清洗速度提升 4 倍  
-🔗 [查看仓库](https://github.com/ciby9833/CargoTranslator)
+🔗 [查看仓库](https://github.com/ciby9833/translator/tree/main/frontend/src)
 
 ---
 
