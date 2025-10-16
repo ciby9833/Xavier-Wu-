@@ -38,7 +38,7 @@
       <img src="https://img.shields.io/badge/Stack-NestJS%20%7C%20Postgres%20%7C%20PostGIS%20%7C%20FAISS-lightgrey"/>
     </td>
     <td width="50%">
-      <h3><a href="https://github.com/ciby9833/CargoTranslator">CargoTranslator</a></h3>
+      <h3><a href="[https://github.com/ciby9833/CargoTranslator](https://github.com/ciby9833/translator/tree/main/frontend/src)">CargoTranslator</a></h3>
       <ul>
         <li>定位：收派/地址标准化、票据解析、地理要素抽取</li>
         <li>亮点：地址模糊匹配、层级映射、成本核算接口</li>
