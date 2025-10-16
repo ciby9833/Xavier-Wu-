@@ -69,7 +69,7 @@
 
 ## 🧭 Roadmaps & Artifacts
 - 📄 **One-pager / PRD**：<i>&lt;放你的 PRD 链接（如 Notion/Feishu 导出）&gt;</i>  
-- 🗺 **Product roadmap**：<i>&lt;GitHub Projects / [看板链接](https://github.com/ciby9833)&gt;</i>  
+- 🗺 **Product roadmap**：<i>&lt; [看板链接](https://github.com/ciby9833)&gt;</i>  
 - 📈 **Metrics I care about**：API 成功率、P50/P95 延迟、单位成本（$/k calls）、账单争议率
 
 ---
