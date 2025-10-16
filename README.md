@@ -75,5 +75,5 @@
 ---
 
 ## ✉️ Contact
-- LinkedIn：<i>&lt;你的 LinkedIn 链接&gt;</i>  
-- Email：<i>&lt;你的邮箱&gt;</i>  # Xavier-Wu-
+- LinkedIn：<i>&lt;www.linkedin.com/in/川（xavier）-吴-583526223&gt;</i>  
+- Email：<i>&lt;noelgfr@gmail.com&gt;</i>  # Xavier-Wu-
