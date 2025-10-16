@@ -1,0 +1,49 @@
+name: Sync Profile README from Xavier-Wu-
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # 每天 00:00 UTC 自动同步
+  workflow_dispatch:       # 支持手动触发
+  # 如果你给这个仓库发 repository_dispatch，也能触发：
+  repository_dispatch:
+
+permissions:
+  contents: write          # 允许写入 README（推送更改）
+
+env:
+  SOURCE_REPO_RAW_URL: https://raw.githubusercontent.com/ciby9833/Xavier-Wu-/main/README.md
+  TARGET_FILE: README.md
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repo (ciby9833/ciby9833)
+        uses: actions/checkout@v4
+
+      - name: Download README from source repo
+        run: |
+          curl -fsSL "$SOURCE_REPO_RAW_URL" -o "$TARGET_FILE.new"
+
+      - name: Skip if no changes
+        id: diff
+        run: |
+          if [ -f "$TARGET_FILE" ] && diff -q "$TARGET_FILE" "$TARGET_FILE.new" >/dev/null; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Replace README and commit
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          mv "$TARGET_FILE.new" "$TARGET_FILE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$TARGET_FILE"
+          git commit -m "chore: sync README from Xavier-Wu-"
+          git push
+
+      - name: Cleanup temp file (no change case)
+        if: steps.diff.outputs.changed != 'true'
+        run: rm -f "$TARGET_FILE.new"
