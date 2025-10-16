@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Location-🌏-brightgreen" />
 </p>
 
-<h1 align="center">Hi, I'm <a href="https://github.com/ciby9833">Ellis</a> — Product Manager</h1>
+<h1 align="center">Hi, I'm <a href="https://github.com/ciby9833">Xavier Wu,中文名 吴川</a> — Product Manager</h1>
 
 <p align="center">
   I design and ship data/geo platform products that balance <b>developer DX</b>, <b>unit economics</b>, and <b>operational clarity</b>.
