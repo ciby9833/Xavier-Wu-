@@ -35,6 +35,7 @@
 - 余额账户、赠送额度、账单明细、信用扣费  
 **技术栈**：NestJS · PostgreSQL + PostGIS · TypeScript  
 **成果**：
+- 费用相比Google便宜 20%以上
 - 平均延迟控制在 80ms 内  
 - 支持上亿次 API 调用 / 月  
 - 实现可视化账单与 UTC 计费周期  
@@ -50,7 +51,8 @@
 - 与 Geocode API、客户表联动  
 **技术栈**：Python · pandas · FastAPI · DuckDB  
 **成果**：
-- 异常地址识别准确率提升 92% → 99%  
+- 异常地址识别准确率提升 92% → 99%
+- 人工地址映射两周工作量降低为十几分钟完成
 - 平均清洗速度提升 4 倍  
 🔗 [查看仓库](https://github.com/ciby9833/translator/tree/main/frontend/src)
 
