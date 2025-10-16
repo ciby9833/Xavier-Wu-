@@ -1,79 +1,143 @@
-<!-- 顶部横幅（可换自己的图，或先删掉） -->
+<!-- 封面徽章 -->
 <p align="center">
   <img src="https://img.shields.io/badge/Role-Product%20Manager-4B8BFF" />
-  <img src="https://img.shields.io/badge/Focus-Geo%20APIs%20%7C%20Billing%20%7C%20Platform-blueviolet" />
-  <img src="https://img.shields.io/badge/Location-🌏-brightgreen" />
+  <img src="https://img.shields.io/badge/Focus-Geo%20API%20%7C%20Billing%20Platform%20%7C%20Logistics%20AI-blueviolet" />
+  <img src="https://img.shields.io/badge/Location-🌏%20Jakarta%20%7C%20Shanghai-brightgreen" />
 </p>
 
-<h1 align="center">Hi, I'm <a href="https://github.com/ciby9833">Xavier Wu,中文名 吴川</a> — Product Manager</h1>
+<h1 align="center">Hi, I'm Xavier Wu，中文名 (吴川) 👋</h1>
+<p align="center">
+  Product Manager | Geo Data & AI Platform | Logistics Intelligence
+</p>
+
+---
+
+## 🧭 About Me
+我是一名专注于 **物流行业的产品经理** 的产品经理。  
+我喜欢用产品思维将复杂的 API、地理数据与商业模型转化为可复用的平台能力。
+
+💡 核心方向：
+- 地理信息系统（GIS）与地址标准化  
+- 阶梯计费与后付费账单体系  
+- 快递网点产能预测与排班  
+- AI 驱动的地址识别与业务自动化  
+
+---
+
+## 🚀 Featured Projects
+
+### 🗺️ GistMap — Geocoding & Billing Platform
+**定位**：开放式地理编码平台 + 按量计费系统  
+**主要功能**：
+- 地址 ↔ 坐标互转（支持多语言）  
+- 按调用次数阶梯计费 / 专属定价 / VIP 宽限期  
+- 余额账户、赠送额度、账单明细、信用扣费  
+**技术栈**：NestJS · PostgreSQL + PostGIS · TypeScript  
+**成果**：
+- 平均延迟控制在 80ms 内  
+- 支持上亿次 API 调用 / 月  
+- 实现可视化账单与 UTC 计费周期  
+🔗 [查看仓库](https://github.com/ciby9833/GistMap)
+
+---
+
+### 📦 CargoTranslator — 地址清洗与结构化系统
+**定位**：将混乱的物流地址转换为可分析的地理数据  
+**主要功能**：
+- 中文/印尼语混合地址解析、模糊匹配  
+- 行政区划层级映射（省-市-区-镇）  
+- 与 Geocode API、客户表联动  
+**技术栈**：Python · pandas · FastAPI · DuckDB  
+**成果**：
+- 异常地址识别准确率提升 92% → 99%  
+- 平均清洗速度提升 4 倍  
+🔗 [查看仓库](https://github.com/ciby9833/CargoTranslator)
+
+---
+
+### 💳 Billing Engine — 阶梯计费与账单系统
+**定位**：兼容多 SKU、多用户定价的通用计费引擎  
+**亮点功能**：
+- 支持“累进阶梯”与“用户专属定价”  
+- UTC 自然月账期、宽限期与信用扣费  
+- 账单展示与余额流水  
+**主要逻辑**：
+- 原始费用按阶梯累计，结果向上取整到分（防亏损）  
+- 信用额度与余额分开扣减、实时账单生成  
+**成果**：
+- 完全兼容 OpenAI / Google Cloud 的后付费模式  
+🔗 [查看文件](https://github.com/ciby9833/GistMap/blob/main/backend-node/src/billing/pricing-engine.service.ts)
+
+---
+
+### 🚚 Courier Scheduling & Capacity Model
+**定位**：快递网点排班与产能匹配系统  
+**逻辑模型**：
+1. 以快递员岗位 + 历史出勤构建排班表  
+2. 每日计算计划出勤率、实际出勤率、排班准确率  
+3. 结合车辆类型能力模型计算预计产能差距  
+4. 输出产能-业务差距告警  
+**产能公式**：
+- 预计产能 = 班次数量 × 人均效率 × 车辆系数  
+- 人均效率 = 近 N 天件量 ÷ 近 N 天人天  
+- 车辆系数 = 车型单班产能 ÷ 平均产能  
+🔗 [需求文档概览](#)
+
+---
+
+## 🧩 Tech & Product Skillset
+<p>
+  <img src="https://img.shields.io/badge/Product-JTBD%20%7C%20Roadmap%20%7C%20PRD-blue" />
+  <img src="https://img.shields.io/badge/Data-PostgreSQL%20%7C%20DuckDB%20%7C%20PostGIS-orange" />
+  <img src="https://img.shields.io/badge/Backend-NestJS%20%7C%20Node.js%20%7C%20FastAPI-lightgrey" />
+  <img src="https://img.shields.io/badge/Design-Figma%20%7C%20Flowchart%20%7C%20Userflow-ff69b4" />
+  <img src="https://img.shields.io/badge/Cloud-GCP%20%7C%20AWS%20%7C%20Vercel-yellow" />
+  <img src="https://img.shields.io/badge/Tools-Notion%20%7C%20Feishu%20%7C%20Cursor-green" />
+</p>
+
+---
+
+## 🧮 Product Thinking Snapshot
+- 📊 指标驱动：以成功率、调用延迟、单位成本为核心指标  
+- 🧠 用户导向：从开发者体验（DX）与财务可见性双线优化  
+- 🔁 可扩展性：所有功能模块均 API-first，可多租户复用  
+- 🧾 成本管理：实现自动账单、配额控制、后付费模式对齐 Google / OpenAI
+
+---
+
+## 📈 Metrics I Care About
+| 指标 | 含义 | 示例 |
+|------|------|------|
+| API 成功率 | 成功响应占比 | ≥ 99.9% |
+| 调用延迟 | P50 / P95 延迟 | 80ms / 150ms |
+| 单位成本 | 每千次调用成本 | $0.004 |
+| 账单误差率 | 实际 vs 账单偏差 | ≤ 0.1% |
+
+---
+
+## 🧭 My Workflow
+```mermaid
+flowchart LR
+A[用户调用API] --> B[Usage Log 写入]
+B --> C[计费引擎计算阶梯费用]
+C --> D[扣减余额/信用额度]
+D --> E[生成账单与日统计]
+E --> F[用户控制台展示]
+
+🪪 Contact
+	•	GitHub: @ciby9833
+	•	Email: ellis@example.com
+	•	LinkedIn: linkedin.com/in/elliswu
+	•	Location: Jakarta 🇮🇩 · Shanghai 🇨🇳
 
 <p align="center">
-  I design and ship data/geo platform products that balance <b>developer DX</b>, <b>unit economics</b>, and <b>operational clarity</b>.
+  <img src="https://img.shields.io/github/followers/ciby9833?label=Follow%20Me&style=social" />
+  <img src="https://img.shields.io/github/stars/ciby9833?label=Stars&style=social" />
 </p>
 
----
-
-## 🔭 What I’m working on
-- **GistMap** — Developer-friendly geocoding & pricing platform（按月阶梯计费、VIP 定制）
-- **CargoTranslator** — 物流文档/地址清洗与结构化、地理反查能力
-- **Billing Engine** — 可配置累进阶梯、对账与发票拆分、UTC 计费周期
-
----
-
-## 🚀 Selected Projects (PM case snapshots)
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3><a href="https://github.com/ciby9833/GistMap">GistMap</a></h3>
-      <ul>
-        <li>定位：面向开发者的 Geocode/Reverse Geocode API</li>
-        <li>亮点：累进阶梯计费、用户专属定价、UTC 周期结算、余额/信用分账</li>
-        <li>结果：相比Google<b><i>&lt;20&gt;%</i></b> 成本下降
-      </ul>
-      <a href="https://github.com/ciby9833/GistMap">
-        <img src="https://img.shields.io/badge/Repo-GistMap-black?logo=github"/>
-      </a>
-      &nbsp;
-      <img src="https://img.shields.io/badge/Stack-NestJS%20%7C%20Postgres%20%7C%20PostGIS%20%7C%20FAISS-lightgrey"/>
-    </td>
-    <td width="50%">
-      <h3><a href="https://github.com/ciby9833/translator/tree/main/frontend/src">CargoTranslator</a></h3>
-      <ul>
-        <li>定位：收派/地址标准化、票据解析、地理要素抽取</li>
-        <li>亮点：地址模糊匹配、层级映射、成本核算接口</li>
-        <li>结果：人工匹配处理时长从 <b><i>&lt;两&gt; 周</i></b> 降至 <b><i>&lt;十几&gt; 分</i></b></li>
-      </ul>
-      <a href="https://github.com/ciby9833/CargoTranslator">
-        <img src="https://img.shields.io/badge/Repo-CargoTranslator-black?logo=github"/>
-      </a>
-      &nbsp;
-      <img src="https://img.shields.io/badge/Focus-Address%20Clean%20%7C%20RL%20heuristics-blue"/>
-    </td>
-  </tr>
-</table>
-
----
-
-## 📊 Product Skills & Toolbelt
-<p>
-  <img src="https://img.shields.io/badge/PM-Jobs%20To%20Be%20Done%20%7C%20PRD%20%7C%20A/B%20-blue" />
-  <img src="https://img.shields.io/badge/Analytics-SQL%20%7C%20Amplitude%20%7C%20GA4-success" />
-  <img src="https://img.shields.io/badge/Design-Figma%20%7C%20Userflow%20%7C%20Wireframe-ff69b4" />
-  <img src="https://img.shields.io/badge/Dev-API%20Design%20%7C%20REST%20%7C%20OpenAPI-informational" />
-  <img src="https://img.shields.io/badge/Data-PostgreSQL%20%7C%20PostGIS%20%7C%20DuckDB-lightgrey" />
-  <img src="https://img.shields.io/badge/Cloud-AWS%20%7C%20GCP%20%7C%20Vercel-yellow" />
+<p align="center">
+  <i>“Turning complexity into clarity — one product at a time.”</i>
 </p>
+```
 
----
 
-## 🧭 Roadmaps & Artifacts
-- 📄 **One-pager / PRD**：<i>&lt;放你的 PRD 链接（如 Notion/Feishu 导出）&gt;</i>  
-- 🗺 **Product roadmap**：<i>&lt; [看板链接](https://github.com/ciby9833)&gt;</i>  
-- 📈 **Metrics I care about**：API 成功率、P50/P95 延迟、单位成本（$/k calls）、账单争议率
-
----
-
-## ✉️ Contact
-- LinkedIn：<i>&lt;www.linkedin.com/in/川（xavier）-吴-583526223&gt;</i>  
-- Email：<i>&lt;noelgfr@gmail.com&gt;</i>  # Xavier-Wu-
